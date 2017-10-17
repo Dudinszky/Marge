@@ -7,19 +7,93 @@
 @import 'utilities/mixins';
 @import 'utilities/variables';
 
-
-.header__nav-icon {
-  width: 19px;
-  height: 2px;
-  background: #000;
+.header-navigation {
+  padding: 0;
 }
 
-.header__nav-list {
-  .header__nav-item {
-    display: inline-block;
+.header__nav {
+  box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
+}
+.header__nav-icon--wrap {
+  position: relative;
+  width: 55px;
+  height: 58px;
+  float: left;
+  border-right: 1px solid  #ededed;
+
+  .header__nav-icon {
+    width: 19px;
+    height: 2px;
+    background: #000;
+    position: relative;
+    top: 19px;
+    left: 19px;
+    margin: 0;
+    &:before {
+      content: '';
+      width: 19px;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 7px;
+    }
+    &:after {
+      content: '';
+      width: 19px;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 14px;
+      right: 0;
+    }
   }
 }
 
+.header__nav-left {
+  margin: 19px 0 16px 28px;
+  float: left;
+  .header__nav-item {
+    margin-right: 31px;
+    float: left;
+    width: 18px;
+  }
+}
+
+.header__nav-right {
+  float: right;
+  position: relative;
+
+  .header__nav-item--right {
+    float: left;
+    margin: 17px 113px 0 0;
+    color: #000000;
+    font-family: 'GothamUltra';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    position: relative;
+  }
+
+  .header__nav-item-icon1 {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+
+  }
+  .header__nav-item-icon2 {
+    position: absolute;
+    left: -45px;
+    top: 5px;
+  }
+
+  .header__nav-link {
+    position: absolute;
+    top: 21px;
+    right: 31px;
+  }
+}
 
 
 
