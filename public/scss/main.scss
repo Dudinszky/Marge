@@ -7,14 +7,18 @@
 @import 'utilities/mixins';
 @import 'utilities/variables';
 
+*,*:before,*:after {box-sizing: border-box; }
+
 .navigation {
   padding: 0;
 }
 
 .navigation__wrapper {
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
+  padding: 0;
 
 }
+
 .navigation__icon--wrap {
   position: relative;
   width: 55px;
@@ -96,6 +100,7 @@
   }
 }
 
+
 .header {
   text-align: center;
   border-bottom: 2px solid #000000;
@@ -144,13 +149,63 @@
   }
 }
 
+
 .background__main-one {
+  padding: 57px 0 0 0;
+  position: relative;
 
   .background__main-img--one {
-     height: 272px;
+    height: 272px;
+    padding: 0;
+    background: url("../img/layer1.jpg");
+    background-size: cover;
+    position: relative;
+  }
 
+}
+  
+.background__main-txt--one {
+  position: absolute;
+  top: 60px;
+  right: -75px;
+  color: #b6977b;
+  font-family: 'FuturaLight';
+  font-size: 145px;
+  font-weight: 100;
+  letter-spacing: 15px;
+}
+
+.box__wrap {
+  padding: 0;
+  .box__wrap-one {
+    height: 210px;
+    background: #000;
+    padding: 0;
+    margin-right: 30px;
+  }
+
+  .box__wrap-two {
+    height: 210px;
+    background: #000;
+    padding: 0;
+    margin-right: 30px;
+  }
+
+  .box__wrap-three {
+    height: 210px;
+    background: #000;
+    padding: 0;
+    margin-right: 30px;
+  }
+
+  .box__wrap-four {
+    height: 210px;
+    background: #000;
+    padding: 0;
   }
 }
+
+
 
 
 
