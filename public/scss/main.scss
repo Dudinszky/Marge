@@ -7,21 +7,22 @@
 @import 'utilities/mixins';
 @import 'utilities/variables';
 
-.header-navigation {
+.navigation {
   padding: 0;
 }
 
-.header__nav {
+.navigation__wrapper {
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
+
 }
-.header__nav-icon--wrap {
+.navigation__icon--wrap {
   position: relative;
   width: 55px;
   height: 58px;
   float: left;
   border-right: 1px solid  #ededed;
 
-  .header__nav-icon {
+  .navigation__icon {
     width: 19px;
     height: 2px;
     background: #000;
@@ -49,21 +50,21 @@
   }
 }
 
-.header__nav-left {
-  margin: 19px 0 16px 28px;
+.navigation__left-wrap {
+  margin: 20px 0 16px 28px;
   float: left;
-  .header__nav-item {
+  .navigation__item {
     margin-right: 31px;
     float: left;
     width: 18px;
   }
 }
 
-.header__nav-right {
+.navigation__right-wrap {
   float: right;
   position: relative;
 
-  .header__nav-item--right {
+  .navigation__item--right {
     float: left;
     margin: 17px 113px 0 0;
     color: #000000;
@@ -76,24 +77,81 @@
     position: relative;
   }
 
-  .header__nav-item-icon1 {
+  .navigation__item--icon1 {
     position: absolute;
     left: -25px;
     top: 5px;
 
   }
-  .header__nav-item-icon2 {
+  .navigation__item--icon2 {
     position: absolute;
     left: -45px;
     top: 5px;
   }
 
-  .header__nav-link {
+  .navigation__item-link {
     position: absolute;
     top: 21px;
     right: 31px;
   }
 }
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #000000;
+
+  .header__main-txt {
+    color: #000000;
+    font-family: 'FuturaBold';
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 54px 0 0 0;
+  }
+
+  .header__txt {
+    opacity: 0.3;
+    color: #000000;
+    font-family: 'FuturaMedium';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin-top: 10px;
+  }
+
+  .header__menu {
+    padding-bottom: 26px;
+    .header__nav {
+      .header__item {
+        float: left;
+        margin-top: 58px;
+        margin-left: 29px;
+        font-family: 'FuturaMedium';
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 2.14px;
+        color: #000;
+
+        .header__link {
+          border-right: 1px solid  #dce0e4;
+          padding-right: 34px;
+        }
+      }
+    }
+  }
+}
+
+.background__main-one {
+
+  .background__main-img--one {
+     height: 272px;
+
+  }
+}
+
 
 
 
