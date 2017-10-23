@@ -1,5 +1,3 @@
-@import 'grid/simplegrid';
-
 @import 'base/base';
 @import 'base/reset';
 @import 'base/fonts';
@@ -12,7 +10,6 @@
 .navigation {
   padding: 0;
 }
-
 .navigation__wrapper {
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
   padding: 0;
@@ -21,6 +18,7 @@
 
 .navigation__icon--wrap {
   position: relative;
+
   width: 55px;
   height: 58px;
   float: left;
@@ -132,7 +130,7 @@
       .header__item {
         float: left;
         margin-top: 58px;
-        margin-left: 29px;
+        padding-left: 34px;
         font-family: 'FuturaMedium';
         font-size: 16px;
         text-transform: uppercase;
@@ -140,9 +138,19 @@
         letter-spacing: 2.14px;
         color: #000;
 
+        &.padding {
+          padding-left: 10px;
+        }
+
         .header__link {
           border-right: 1px solid  #dce0e4;
           padding-right: 34px;
+        }
+
+        .border {
+          border: none;
+          padding: 0;
+          margin: 0;
         }
       }
     }
@@ -156,7 +164,6 @@
 
   .background__main-img--one {
     height: 272px;
-    padding: 0;
     background: url("../img/layer1.jpg");
     background-size: cover;
     position: relative;
@@ -175,36 +182,54 @@
   letter-spacing: 15px;
 }
 
-.box__wrap {
-  padding: 0;
-  .box__wrap-one {
-    height: 210px;
-    background: #000;
-    padding: 0;
-    margin-right: 30px;
-  }
 
-  .box__wrap-two {
-    height: 210px;
-    background: #000;
-    padding: 0;
-    margin-right: 30px;
-  }
+.box-wrappers {
 
-  .box__wrap-three {
-    height: 210px;
-    background: #000;
-    padding: 0;
-    margin-right: 30px;
-  }
+  .box__wrap {
+    padding-top: 144px;
+    position: relative;
 
-  .box__wrap-four {
-    height: 210px;
-    background: #000;
-    padding: 0;
+    .box__header-txt {
+      position: absolute;
+      top: 40px;
+      left: 15px;
+      opacity: 0.1;
+      color: #000;
+      font-family: 'Lobster';
+      font-size: 130px;
+      font-weight: 700;
+      font-style: italic;
+    }
+    .box-wrap-one {
+      height: 312px;
+
+      .box__wrap-img--one {
+        height: 210px;
+        padding: 0;
+        margin-right: 31px;
+      }
+    }
+    
+    .box__wrap-img--two {
+      height: 210px;
+      padding: 0;
+      margin-right: 31px;
+    }
+
+    .box__wrap-img--three {
+      height: 210px;
+      padding: 0;
+      margin-right: 31px;
+
+    }
+
+    .box__wrap-img--four {
+      height: 210px;
+      padding: 0;
+
+    }
   }
 }
-
 
 
 
