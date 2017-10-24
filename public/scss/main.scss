@@ -185,9 +185,11 @@
 
 .box-wrappers {
 
+  padding: 0;
   .box__wrap {
     padding-top: 144px;
     position: relative;
+
 
     .box__header-txt {
       position: absolute;
@@ -200,33 +202,20 @@
       font-weight: 700;
       font-style: italic;
     }
-    .box-wrap-one {
-      height: 312px;
+
+    .box__wrapper {
+      margin-right: 30px;
+      padding: 0;
 
       .box__wrap-img--one {
         height: 210px;
-        padding: 0;
-        margin-right: 31px;
+        padding-bottom: 300px;
       }
-    }
-    
-    .box__wrap-img--two {
-      height: 210px;
-      padding: 0;
-      margin-right: 31px;
-    }
-
-    .box__wrap-img--three {
-      height: 210px;
-      padding: 0;
-      margin-right: 31px;
 
     }
 
-    .box__wrap-img--four {
-      height: 210px;
-      padding: 0;
-
+    .none-margin {
+      margin: 0;
     }
   }
 }
