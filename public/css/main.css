@@ -314,8 +314,14 @@ table {
       margin-right: 30px;
       padding: 0; }
       .box-wrappers .box__wrap .box__wrapper .box__wrap-img--one {
-        height: 210px;
-        padding-bottom: 300px; }
+        height: 210px; }
+    .box-wrappers .box__wrap .box__wrap-img--txt {
+      padding-top: 15px;
+      color: #000000;
+      font-family: 'FuturaMedium';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
     .box-wrappers .box__wrap .none-margin {
       margin: 0; }
 

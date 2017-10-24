@@ -209,11 +209,16 @@
 
       .box__wrap-img--one {
         height: 210px;
-        padding-bottom: 300px;
       }
-
     }
-
+.box__wrap-img--txt {
+  padding-top: 15px;
+  color: #000000;
+  font-family: 'FuturaMedium';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
     .none-margin {
       margin: 0;
     }
