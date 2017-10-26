@@ -6,30 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/simplegrid.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidebar__btn').click(function(){
+                $('.sidebar').toggleClass('active');
+                $('.sidebar__btn').toggleClass('toggle');
+
+            });
+        });
+    </script>
+
 </head>
 <body>
 
+
+
 <div class="container-fluid">
-        <div class="navigation">
-            <div class=" navigation__wrapper col-1-1">
-                <div class="navigation__icon--wrap">
-                  <div class="navigation__icon"></div>
-                </div>
+    <div class="navigation">
+        <div class="navigation__wrapper col-1-1">
 
-                <ul class="navigation__left-wrap">
-                    <li class="navigation__item"><a href="javascript:;"><img src="public/icons/facebook.png" alt="" ></a></li>
-                    <li class="navigation__item"><a href="javascript:;"><img src="public/icons/twitter.png" alt="" ></a></li>
-                    <li class="navigation__item"><a href="javascript:;"><img src="public/icons/google.png" alt="" ></a></li>
-                    <li class="navigation__item"><a href="javascript:;"><img src="public/icons/instagram.png" alt="" ></a></li>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Gugu</a></li>
+                    <li><a href="#">Huhu</a></li>
+                    <li><a href="#">Bibi</a></li>
+                    <li><a href="#">Lili</a></li>
+                    <li><a href="#">Gigi</a></li>
                 </ul>
-
-                <ul class="navigation__right-wrap">
-                    <li class="navigation__item--right"><a href="javascript:;"><img src="public/icons/forma1.png" class="navigation__item--icon1" alt="" >Sydney</a></li>
-                    <li class="navigation__item--right"><a href="javascript:;"><img src="public/icons/forma2.png" class="navigation__item--icon2" alt="" >Subscribe</a></li>
-                    <a class="navigation__item-link" href="javascript:;"><img src="public/icons/search.png" alt="" ></a>
-                </ul>
+                <button class="sidebar__btn">
+                    <div class="sidebar__icon toggle"></div>
+                </button>
             </div>
-       </div>
+
+
+            <ul class="navigation__left-wrap">
+                <li class="navigation__item"><a href="javascript:;"><img src="public/icons/facebook.png" alt="" ></a></li>
+                <li class="navigation__item"><a href="javascript:;"><img src="public/icons/twitter.png" alt="" ></a></li>
+                <li class="navigation__item"><a href="javascript:;"><img src="public/icons/google.png" alt="" ></a></li>
+                <li class="navigation__item"><a href="javascript:;"><img src="public/icons/instagram.png" alt="" ></a></li>
+            </ul>
+
+            <ul class="navigation__right-wrap">
+                <li class="navigation__item--right"><a href="javascript:;"><img src="public/icons/forma1.png" class="navigation__item--icon1" alt="" >Sydney</a></li>
+                <li class="navigation__item--right"><a href="javascript:;"><img src="public/icons/forma2.png" class="navigation__item--icon2" alt="" >Subscribe</a></li>
+                <a class="navigation__item-link" href="javascript:;"><img src="public/icons/search.png" alt="" ></a>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <div class="container-fluid">
@@ -55,7 +79,7 @@
 
 <div class="grid background__main-one">
     <div class="background__main-img--one col-1-1">
-      <h1 class="background__main-txt--one">Banner</h1>
+        <h1 class="background__main-txt--one">Banner</h1>
     </div>
 </div>
 

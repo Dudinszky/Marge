@@ -167,40 +167,61 @@ table {
 
 .navigation__wrapper {
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
-.navigation__icon--wrap {
-  position: relative;
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -375px;
+  width: 371px;
+  height: 400px;
+  box-shadow: 0 8px 27px rgba(172, 190, 213, 0.32);
+  background-color: #262626;
+  transition: 0.3s; }
+
+.active {
+  left: 0; }
+
+.sidebar__btn {
+  position: absolute;
   width: 55px;
   height: 58px;
-  float: left;
-  border-right: 1px solid  #ededed; }
-  .navigation__icon--wrap .navigation__icon {
-    width: 19px;
+  border-right: 1px solid  #ededed;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  vertical-align: middle;
+  cursor: pointer;
+  top: -2px;
+  left: 372px; }
+  .sidebar__btn .sidebar__icon {
     height: 2px;
+    width: 19px;
     background: #000;
-    position: relative;
-    top: 19px;
-    left: 19px;
-    margin: 0; }
-    .navigation__icon--wrap .navigation__icon:before {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 15px; }
+    .sidebar__btn .sidebar__icon:before {
       content: '';
-      width: 19px;
-      height: 2px;
-      background: #000;
       position: absolute;
-      top: 7px; }
-    .navigation__icon--wrap .navigation__icon:after {
+      top: 5px;
+      left: 0;
+      background: #000;
+      width: 19px;
+      height: 2px; }
+    .sidebar__btn .sidebar__icon:after {
       content: '';
-      width: 19px;
-      height: 2px;
-      background: #000;
       position: absolute;
-      top: 14px;
-      right: 0; }
+      top: 10px;
+      left: 0;
+      background: #000;
+      width: 19px;
+      height: 2px; }
 
 .navigation__left-wrap {
-  margin: 20px 0 16px 28px;
+  margin: 20px 0 16px 88px;
   float: left; }
   .navigation__left-wrap .navigation__item {
     margin-right: 31px;
