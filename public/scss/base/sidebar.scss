@@ -1,0 +1,127 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -369px;
+  width: 369px;
+  height: 1653px;
+  color: #000000;
+  box-shadow: 0 8px 27px rgba(172, 190, 213, 0.32);
+  background-color: #ffffff;
+  transition:  0.3s ;
+}
+
+.active {
+  left: 0;
+}
+
+.sidebar__btn {
+  position: absolute;
+  width: 55px;
+  height: 58px;
+  border-right: 1px solid  #ededed;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  vertical-align: middle;
+  cursor: pointer;
+  top: -2px;
+  left: 372px;
+
+  .sidebar__icon {
+    height: 2px;
+    width: 19px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background: #000;
+      width: 19px;
+      height: 2px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background: #000;
+      width: 19px;
+      height: 2px;
+    }
+  }
+}
+
+.sidebar__header {
+  padding-top: 52px;
+  color: #000000;
+  font-family: 'Lobster';
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+.sidebar__txt {
+  padding-top: 19px;
+  padding-bottom: 69px;
+  opacity: 0.5;
+  color: #000000;
+  font-family: 'FuturaLight';
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+}
+
+.sidebar__content {
+  padding: 0 48px 48px 45px;
+  border-bottom: 2px solid #e5e5e5;
+
+  .sidebar__navigation {
+    display: block;
+
+    .sidebar__navigation-item {
+      padding: 20px 0 20px 0;
+      border-bottom: 2px solid #e5e5e5;
+      font-family: 'FuturaBold';
+      text-transform: uppercase;
+
+      &.b-bottom {
+        border: none;
+      }
+      
+      .sidebar__navigation-drop {
+
+
+        .sidebar__navigation-drop--item {
+          display: none;
+
+          &:hover {
+            display: block;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,39 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/simplegrid.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidebar__btn').click(function(){
-                $('.sidebar').toggleClass('active');
-                $('.sidebar__btn').toggleClass('toggle');
-
-            });
-        });
-    </script>
-
+    <script src="public/jquery/jquery.js"></script>
+    <script src="public/js/js.menu.js"></script>
 </head>
 <body>
 
 
 
-<div class="container-fluid">
+<div class="container">
     <div class="navigation">
         <div class="navigation__wrapper col-1-1">
 
             <div class="sidebar">
-                <ul>
-                    <li><a href="#">Gugu</a></li>
-                    <li><a href="#">Huhu</a></li>
-                    <li><a href="#">Bibi</a></li>
-                    <li><a href="#">Lili</a></li>
-                    <li><a href="#">Gigi</a></li>
-                </ul>
+
                 <button class="sidebar__btn">
                     <div class="sidebar__icon toggle"></div>
                 </button>
+
+                <div class="sidebar__content">
+                    <h1 class="sidebar__header">D’marge</h1>
+                    <h5 class="sidebar__txt">FOR MAGNIFICENT BASTARDS </h5>
+                    <ul class="sidebar__navigation">
+
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Style</a>
+                            <ul class="sidebar__navigation-drop">
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Men’s Fashion tips </a></li>
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Men’s Fashion Trends S</a></li>
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Street style & Celebrities </a></li>
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Menswear</a></li>
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Watches</a></li>
+                                <li class="sidebar__navigation-drop--item"><a href="#" class="sidebar__navigation-drop--link">Sneakers</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Grooming</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Tech</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Living</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Motoring</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Travel</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Sport</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Vices</a></li>
+                        <li class="sidebar__navigation-item"><a class="sidebar__navigation-link" href="#">Affairs</a></li>
+                        <li class="sidebar__navigation-item b-bottom"><a class="sidebar__navigation-link" href="#">Videos</a></li>
+                    </ul>
+                </div>
             </div>
 
+            <!--sidebar end-->
 
             <ul class="navigation__left-wrap">
                 <li class="navigation__item"><a href="javascript:;"><img src="public/icons/facebook.png" alt="" ></a></li>
@@ -56,7 +70,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
     <div class="header col-1-1">
         <h1 class="header__main-txt">D’marge</h1>
         <h4 class="header__txt">FOR MAGNIFICENT BASTARDS </h4>

@@ -1,9 +1,13 @@
 @import 'base/base';
 @import 'base/reset';
 @import 'base/fonts';
+@import 'base/sidebar';
+
 
 @import 'utilities/mixins';
 @import 'utilities/variables';
+
+
 
 *,*:before,*:after {box-sizing: border-box; }
 
@@ -14,66 +18,8 @@
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.26);
   padding: 0;
   position: relative;
-
 }
-
-.sidebar {
-  position: absolute;
-  top: 0;
-  left: -375px;
-  width: 371px;
-  height: 400px;
-  box-shadow: 0 8px 27px rgba(172, 190, 213, 0.32);
-  background-color: #262626;
-  transition:  0.3s ;
-}
-
-.active {
-  left: 0;
-}
-
-.sidebar__btn {
-  position: absolute;
-  width: 55px;
-  height: 58px;
-  border-right: 1px solid  #ededed;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-  vertical-align: middle;
-  cursor: pointer;
-  top: -2px;
-  left: 372px;
-
-  .sidebar__icon {
-    height: 2px;
-    width: 19px;
-    background: #000;
-    display: block;
-    position: absolute;
-    top: 23px;
-    left: 15px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 5px;
-      left: 0;
-      background: #000;
-      width: 19px;
-      height: 2px;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 0;
-      background: #000;
-      width: 19px;
-      height: 2px;
-    }
-  }
-}
-
+//sidebar somewhere is here
 
 .navigation__left-wrap {
   margin: 20px 0 16px 88px;
@@ -181,22 +127,22 @@
 
 .background__main-one {
   padding: 57px 0 0 0;
-  position: relative;
+  text-align: right;
+
 
   .background__main-img--one {
     height: 272px;
     background: url("../img/layer1.jpg");
     background-size: cover;
-    position: relative;
   }
 
 }
   
 .background__main-txt--one {
-  position: absolute;
-  top: 60px;
-  right: -75px;
-  color: #b6977b;
+  float: right;
+  margin-left: 55px;
+  margin-top: 70px;
+  color: #e5e5e5;
   font-family: 'FuturaLight';
   font-size: 145px;
   font-weight: 100;
@@ -204,22 +150,17 @@
 }
 
 .box-wrappers {
-
   padding: 0;
   .box__wrap {
-    padding-top: 144px;
-    position: relative;
 
     .box__header-txt {
-      position: absolute;
-      top: 40px;
-      left: 15px;
-      opacity: 0.1;
-      color: #000;
+      padding-top: 59px;
+      color: #e5e5e5;
       font-family: 'Lobster';
       font-size: 130px;
       font-weight: 100;
       font-style: italic;
+      overflow: hidden;
     }
 
     .box__wrapper {
@@ -243,8 +184,7 @@
       }
       .box__wrap-img--txt2 {
         padding-top: 10px;
-        opacity: 0.5;
-        color: #000000;
+        color: #7f7f7f;
         font-family: 'FuturaMedium';
         font-size: 16px;
         font-weight: 400;

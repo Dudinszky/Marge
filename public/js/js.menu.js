@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    $('#sidebar__icon-wrap').click(function(){
-        $('#sidebar').toggleClass('visible');
+    $('.sidebar__btn').click(function(){
+        $('.sidebar').toggleClass('active');
+        $('.sidebar__btn').toggleClass('toggle');
 
     });
 });
