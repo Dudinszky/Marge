@@ -168,7 +168,7 @@ table {
   color: #000000;
   box-shadow: 0 8px 27px rgba(172, 190, 213, 0.32);
   background-color: #ffffff;
-  transition: 0.3s; }
+  transition: 0.7s; }
 
 .active {
   left: 0; }
@@ -233,20 +233,51 @@ table {
 .sidebar__content {
   padding: 0 48px 48px 45px;
   border-bottom: 2px solid #e5e5e5; }
-  .sidebar__content .sidebar__navigation {
-    display: block; }
-    .sidebar__content .sidebar__navigation .sidebar__navigation-item {
-      padding: 20px 0 20px 0;
-      border-bottom: 2px solid #e5e5e5;
+  .sidebar__content .sidebar__navigation .sidebar__navigation-item {
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #e5e5e5;
+    font-family: 'FuturaBold';
+    text-transform: uppercase; }
+    .sidebar__content .sidebar__navigation .sidebar__navigation-item.b-bottom {
+      border: none; }
+  .sidebar__content .sidebar__navigation .sidebar__navigation-drop {
+    display: none; }
+    .sidebar__content .sidebar__navigation .sidebar__navigation-drop:hover {
+      display: block; }
+
+.sidebar__social-nav {
+  padding: 51px 48px 62px 45px;
+  float: left; }
+  .sidebar__social-nav .sidebar__social-item {
+    margin-right: 37px;
+    float: left;
+    width: 18px; }
+
+.sidebar__subscribe {
+  padding-left: 50px;
+  float: left; }
+  .sidebar__subscribe .sidebar__mail-icon {
+    float: left;
+    margin-top: 3px; }
+  .sidebar__subscribe .sidebar__subscribe-wrap {
+    padding-left: 40px; }
+    .sidebar__subscribe .sidebar__subscribe-wrap .sidebar__subscribe-header {
+      float: left;
+      color: #000000;
       font-family: 'FuturaBold';
-      text-transform: uppercase; }
-      .sidebar__content .sidebar__navigation .sidebar__navigation-item.b-bottom {
-        border: none; }
-      .sidebar__content .sidebar__navigation .sidebar__navigation-item .sidebar__navigation-drop .sidebar__navigation-drop--item {
-        display: none; }
-        .sidebar__content .sidebar__navigation .sidebar__navigation-item .sidebar__navigation-drop .sidebar__navigation-drop--item:hover {
-          display: block;
-          transition: 0.3s; }
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      margin-right: 10px; }
+    .sidebar__subscribe .sidebar__subscribe-wrap .sidebar__subscribe-txt {
+      font-family: "FuturaMedium";
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
