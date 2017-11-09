@@ -113,7 +113,7 @@
         font-family: 'FuturaMedium';
         font-size: 16px;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 600;
         letter-spacing: 2.14px;
         color: #000;
 
@@ -189,8 +189,8 @@
         padding-top: 15px;
         color: #000000;
         font-family: 'FuturaMedium';
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 17px;
+        font-weight: 600;
         line-height: 24px;
       }
       .box__wrap-img--txt2 {
@@ -198,7 +198,7 @@
         color: #7f7f7f;
         font-family: 'FuturaMedium';
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 30px;
         text-transform: uppercase;
         letter-spacing: 3.2px;
@@ -209,22 +209,92 @@
 
 .main__content {
   padding-top: 73px;
+  padding-bottom: 200px;
+}
 
-  .main__content-left {
-    height: 400px;
-    background: #000;
-    padding: 0;
+.main__content-left {
+  height: 400px;
+  padding: 0;
+}
+
+.main__content-right {
+  padding: 1px;
+}
+  .main__right-img--wrap {
+    padding-top: 158px;
+    height: 710px;
+    background-color: #f2f4f6;
+    .main__right-img {
+      width: 100%;
+      height: 552px;
+    }
   }
 
-  .main__content-right {
-    padding: 0;
-    .main__right-img--wrap {
-      padding: 0;
+  .main__right-subscribe {
+    padding: 44px 0 0 0;
+    margin-top: 53px;
+    border: 3px solid #000;
+    background-color: #fff;
+    text-align: center;
+    color: #000000;
+    font-family: "FuturaMedium";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
 
+    .main__right-search {
+      float: left;
+      margin: 34px 0 56px 37px;
+      width: 177px;
+      height: 45px;
+      border: 2px solid #e5e5e5;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      padding-left: 19px;
+      color: #efefef;
     }
 
+    .main__subscribe-btn {
+      margin: 34px 0 56px 0;
+      float: left;
+      width: 102px;
+      height: 45px;
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      text-align: center;
+      padding: 9px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .main__subscribe-btn--txt {
+      color: #fff;
+      font-family: 'FuturaMedium';
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+    }
+
+    .main__right-subscribe--social {
+      padding: 30px 0 51px 78px;
+
+
+      .main__social-item {
+        margin-right: 38px;
+        float: left;
+        width: 18px;
+      }
+    }
   }
-}
+
+
 
 
 
