@@ -471,4 +471,15 @@ table {
       text-transform: uppercase;
       letter-spacing: 3.2px; }
 
+.main__content {
+  padding-top: 73px; }
+  .main__content .main__content-left {
+    height: 400px;
+    background: #000;
+    padding: 0; }
+  .main__content .main__content-right {
+    padding: 0; }
+    .main__content .main__content-right .main__right-img--wrap {
+      padding: 0; }
+
 /*# sourceMappingURL=main.css.map */
