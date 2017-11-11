@@ -50,9 +50,9 @@
     float: left;
     margin: 17px 113px 0 0;
     color: #000000;
-    font-family: 'GothamUltra';
+    font-family: 'Gotham';
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -210,16 +210,66 @@
 .main__content {
   padding-top: 73px;
   padding-bottom: 200px;
+  position: relative;
 }
 
 .main__content-left {
   height: 400px;
   padding: 0;
+
+  .main__content-left-img {
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+
+  .main__content-txt--wrap {
+    width: 170px;
+    float: left;
+    border-top: 3px solid #000000;
+    margin-left: 30px;
+
+    .main__content-txt {
+      margin-top: 22px;
+      font-family: 'FuturaMedium';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+      color: #7f7f7f;
+
+    .slanted {
+      font-family: 'Lobster';
+      position: absolute;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #7f7f7f;
+      margin-left: 15px;
+      letter-spacing: 1.8px;
+      }
+    }
+  }
+
+  .main__content-header--wrap {
+    text-align: left;
+    float: left;
+    margin: 34px 0 117px 30px;
+
+    .main__content-header {
+      color: #000000;
+      font-family: 'FuturaMedium';
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
 }
 
 .main__content-right {
   padding: 1px;
-}
+
   .main__right-img--wrap {
     padding-top: 158px;
     height: 710px;
@@ -285,7 +335,6 @@
     .main__right-subscribe--social {
       padding: 30px 0 51px 78px;
 
-
       .main__social-item {
         margin-right: 38px;
         float: left;
@@ -294,8 +343,7 @@
     }
   }
 
-
-
+}
 
 
 

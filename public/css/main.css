@@ -358,9 +358,9 @@ table {
     float: left;
     margin: 17px 113px 0 0;
     color: #000000;
-    font-family: 'GothamUltra';
+    font-family: 'Gotham';
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -474,73 +474,109 @@ table {
 
 .main__content {
   padding-top: 73px;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  position: relative; }
 
 .main__content-left {
   height: 400px;
   padding: 0; }
+  .main__content-left .main__content-left-img {
+    width: 300px;
+    height: 300px;
+    float: left; }
+  .main__content-left .main__content-txt--wrap {
+    width: 170px;
+    float: left;
+    border-top: 3px solid #000000;
+    margin-left: 30px; }
+    .main__content-left .main__content-txt--wrap .main__content-txt {
+      margin-top: 22px;
+      font-family: 'FuturaMedium';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+      color: #7f7f7f; }
+      .main__content-left .main__content-txt--wrap .main__content-txt .slanted {
+        font-family: 'Lobster';
+        position: absolute;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #7f7f7f;
+        margin-left: 15px;
+        letter-spacing: 1.8px; }
+  .main__content-left .main__content-header--wrap {
+    text-align: left;
+    float: left;
+    margin: 34px 0 117px 30px; }
+    .main__content-left .main__content-header--wrap .main__content-header {
+      color: #000000;
+      font-family: 'FuturaMedium';
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px; }
 
 .main__content-right {
   padding: 1px; }
-
-.main__right-img--wrap {
-  padding-top: 158px;
-  height: 710px;
-  background-color: #f2f4f6; }
-  .main__right-img--wrap .main__right-img {
-    width: 100%;
-    height: 552px; }
-
-.main__right-subscribe {
-  padding: 44px 0 0 0;
-  margin-top: 53px;
-  border: 3px solid #000;
-  background-color: #fff;
-  text-align: center;
-  color: #000000;
-  font-family: "FuturaMedium";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1.8px; }
-  .main__right-subscribe .main__right-search {
-    float: left;
-    margin: 34px 0 56px 37px;
-    width: 177px;
-    height: 45px;
-    border: 2px solid #e5e5e5;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.4px;
-    padding-left: 19px;
-    color: #efefef; }
-  .main__right-subscribe .main__subscribe-btn {
-    margin: 34px 0 56px 0;
-    float: left;
-    width: 102px;
-    height: 45px;
-    background-color: #000000;
-    color: #fff;
-    border: none;
+  .main__content-right .main__right-img--wrap {
+    padding-top: 158px;
+    height: 710px;
+    background-color: #f2f4f6; }
+    .main__content-right .main__right-img--wrap .main__right-img {
+      width: 100%;
+      height: 552px; }
+  .main__content-right .main__right-subscribe {
+    padding: 44px 0 0 0;
+    margin-top: 53px;
+    border: 3px solid #000;
+    background-color: #fff;
     text-align: center;
-    padding: 9px;
-    cursor: pointer;
-    list-style: none; }
-  .main__right-subscribe .main__subscribe-btn--txt {
-    color: #fff;
-    font-family: 'FuturaMedium';
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
+    color: #000000;
+    font-family: "FuturaMedium";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 2.4px; }
-  .main__right-subscribe .main__right-subscribe--social {
-    padding: 30px 0 51px 78px; }
-    .main__right-subscribe .main__right-subscribe--social .main__social-item {
-      margin-right: 38px;
+    letter-spacing: 1.8px; }
+    .main__content-right .main__right-subscribe .main__right-search {
       float: left;
-      width: 18px; }
+      margin: 34px 0 56px 37px;
+      width: 177px;
+      height: 45px;
+      border: 2px solid #e5e5e5;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      padding-left: 19px;
+      color: #efefef; }
+    .main__content-right .main__right-subscribe .main__subscribe-btn {
+      margin: 34px 0 56px 0;
+      float: left;
+      width: 102px;
+      height: 45px;
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      text-align: center;
+      padding: 9px;
+      cursor: pointer;
+      list-style: none; }
+    .main__content-right .main__right-subscribe .main__subscribe-btn--txt {
+      color: #fff;
+      font-family: 'FuturaMedium';
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px; }
+    .main__content-right .main__right-subscribe .main__right-subscribe--social {
+      padding: 30px 0 51px 78px; }
+      .main__content-right .main__right-subscribe .main__right-subscribe--social .main__social-item {
+        margin-right: 38px;
+        float: left;
+        width: 18px; }
 
 /*# sourceMappingURL=main.css.map */
