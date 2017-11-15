@@ -137,11 +137,14 @@
 }
 
 .background__main-one {
-  padding: 57px 0 0 0;
-  text-align: right;
-
+  //text-align: right;
+  
 
   .background__main-img--one {
+    margin-top: 57px;
+    margin-left: 60px;
+    float: left;
+    width: 90%;
     height: 272px;
     background: url("../img/layer1.jpg");
     background-size: cover;
@@ -151,21 +154,37 @@
   
 .background__main-txt--one {
   float: right;
-  margin-left: 55px;
+  //margin-right: -75px;
+  margin-right: 50px;
   margin-top: 70px;
-  color: #e5e5e5;
+  color: #b6977b;
   font-family: 'FuturaLight';
   font-size: 145px;
   font-weight: 100;
   letter-spacing: 15px;
 }
+  .main__txt-outline {
+
+    //color: #b6977b;
+    background: #000;
+    font-family: 'FuturaLight';
+    font-size: 145px;
+    font-weight: 100;
+    letter-spacing: 15px;
+  }
+
+
 
 .box-wrappers {
   padding: 0;
   .box__wrap {
 
+
     .box__header-txt {
+      position: relative;
       padding-top: 59px;
+      margin-bottom: -32px;
+      z-index: -1;
       color: #e5e5e5;
       font-family: 'Lobster';
       font-size: 130px;
@@ -175,9 +194,8 @@
     }
 
     .box__wrapper {
-      margin-right: 30px;
-      padding: 0;
-      &.none-margin {
+      margin-right: 28px;
+      &.none-margin{
         margin: 0;
       }
 
